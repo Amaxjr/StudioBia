@@ -1,0 +1,85 @@
+# 💅 Studio de Alongamento de Unhas
+
+Website institucional desenvolvido para um studio especializado em alongamento de unhas, com foco na apresentação dos serviços, portfólio profissional, relacionamento com clientes e divulgação de curso de formação na área.
+
+## 📌 Sobre o projeto
+
+O projeto tem como objetivo criar uma presença digital profissional para o studio, permitindo que novas clientes conheçam os serviços oferecidos, visualizem trabalhos realizados e entrem em contato para realizar um agendamento.
+
+O site também possui uma área dedicada ao **curso de alongamento de unhas**, apresentando a formação, conteúdo, diferenciais e informações para pessoas interessadas em aprender a técnica profissionalmente.
+
+## 🎯 Objetivos
+
+* Apresentar o studio e sua proposta.
+* Exibir os principais serviços oferecidos.
+* Criar uma experiência visual alinhada ao segmento de beleza.
+* Apresentar o portfólio de trabalhos.
+* Facilitar o contato e agendamento de clientes.
+* Divulgar o curso profissional de alongamento de unhas.
+* Criar uma estrutura preparada para conversão de visitantes em clientes ou alunas.
+* Desenvolver um projeto real para composição de portfólio profissional.
+
+## 🧩 Estrutura do projeto
+
+O site será dividido principalmente em duas jornadas:
+
+### 💅 Para clientes
+
+* Apresentação do studio
+* Serviços
+* Portfólio
+* Diferenciais
+* Depoimentos
+* Informações de atendimento
+* Agendamento/Contato
+
+### 🎓 Para futuras alunas
+
+* Apresentação do curso
+* Público-alvo
+* Conteúdo programático
+* Metodologia
+* Materiais
+* Certificação
+* Depoimentos/Resultados
+* Informações de inscrição
+
+## 🚀 Tecnologias
+
+> A stack será definida durante o desenvolvimento do projeto.
+
+Possíveis tecnologias:
+
+* HTML
+* CSS
+* JavaScript
+* React
+* TypeScript
+
+## 📱 Responsividade
+
+O projeto será desenvolvido pensando em diferentes dispositivos, principalmente **smartphones**, considerando que grande parte do público deverá acessar o site através de redes sociais e links compartilhados pelo celular.
+
+## 🎨 Direção visual
+
+A identidade visual será definida de acordo com o posicionamento da marca, buscando transmitir:
+
+* Beleza
+* Profissionalismo
+* Elegância
+* Confiança
+* Qualidade
+
+## 📈 Status
+
+🚧 **Em desenvolvimento**
+
+A estrutura, identidade visual e funcionalidades serão definidas e implementadas progressivamente durante o desenvolvimento do projeto.
+
+## 👨‍💻 Desenvolvimento
+
+Projeto desenvolvido por **André Maximiano** como parte do portfólio de desenvolvimento web.
+
+---
+
+> **Projeto fictício/experimental ou desenvolvido para cliente — informações da marca serão adicionadas conforme a definição do projeto.**
