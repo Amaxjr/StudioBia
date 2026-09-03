@@ -155,6 +155,61 @@
 	.hero h1 { font-size:clamp(3.7rem,6vw,5.5rem); }
 	.portfolio { gap:48px; }
 }
+.course-page .site-header { position:sticky; }
+.course-hero { min-height:680px; background:var(--sand); }
+.course-hero-inner { min-height:680px; display:grid; grid-template-columns:1fr .9fr; gap:90px; align-items:center; }
+.course-hero h1 { margin:25px 0; font-size:clamp(4rem,7vw,7.2rem); }
+.course-hero p:not(.eyebrow) { max-width:350px; margin:30px 0; color:var(--mid); }
+.course-image-placeholder,.certificate-placeholder { position:relative; display:flex; flex-direction:column; justify-content:space-between; min-height:440px; padding:24px; overflow:hidden; color:var(--nude); background:var(--dark); }
+.course-image-placeholder:before,.certificate-placeholder:before { content:''; position:absolute; width:78%; aspect-ratio:1; left:11%; bottom:-22%; border:1px solid rgba(232,213,196,.5); border-radius:50%; }
+.course-image-placeholder:after,.certificate-placeholder:after { content:''; position:absolute; inset:16px; border:1px solid rgba(247,239,233,.4); }
+.course-image-placeholder span,.course-image-placeholder small,.certificate-placeholder span { position:relative; z-index:1; }
+.course-image-placeholder span { align-self:center; margin:auto; text-align:center; font:500 2.4rem/.95 'Playfair Display'; }
+.course-image-placeholder small { font:.58rem 'DM Mono'; letter-spacing:.14em; }
+.course-intro { display:grid; grid-template-columns:.8fr 1.1fr 1fr; gap:55px; }
+.course-intro h2,.program h2,.materials h2,.course-results blockquote,.course-cta h2 { margin:28px 0 0; font:500 clamp(3rem,5vw,5.3rem)/.96 'Playfair Display'; letter-spacing:-.03em; }
+.course-copy { align-self:end; max-width:340px; color:var(--mid); font-size:.9rem; }
+.placeholder-note { color:var(--rose); font:.62rem/1.5 'DM Mono'; text-transform:uppercase; letter-spacing:.08em; }
+.audience-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:60px; margin-top:70px; }
+.audience-grid article,.program-grid article { border-top:1px solid rgba(247,239,233,.35); padding-top:16px; }
+.audience-grid span,.program-grid span { color:var(--rose); font:.65rem 'DM Mono'; text-transform:uppercase; letter-spacing:.1em; }
+.audience-grid h3,.program-grid h3 { margin:28px 0 8px; font:500 1.6rem 'Playfair Display'; }
+.audience-grid p,.program-grid p { max-width:240px; color:var(--sand); font-size:.82rem; }
+.program-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:48px 80px; margin-top:70px; }
+.program-grid article { border-color:var(--line); }
+.program-grid p { color:var(--mid); }
+.method-inner { display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
+.course-image-small { min-height:400px; }
+.method-inner h2 { margin:28px 0; font:500 clamp(3rem,5vw,5.2rem)/.96 'Playfair Display'; }
+.method-inner p { max-width:340px; color:var(--mid); }
+.materials-grid,.investment-inner,.certificate-inner { display:grid; grid-template-columns:1.1fr 1fr; gap:100px; margin-top:70px; align-items:center; }
+.materials-grid > div > p { max-width:320px; color:var(--mid); font-size:.86rem; }
+.materials-grid ul { margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
+.materials-grid li { display:flex; justify-content:space-between; gap:20px; padding:18px 0; border-bottom:1px solid var(--line); color:var(--dark); font-size:.84rem; }
+.materials-grid li span { color:var(--rose); font:.62rem 'DM Mono'; }
+.certificate-inner { margin-top:0; }
+.certificate-inner h2 { margin-top:28px; font:500 clamp(3rem,5vw,5.2rem)/.96 'Playfair Display'; }
+.certificate-placeholder { min-height:280px; background:var(--nude); color:var(--dark); }
+.certificate-placeholder:before { border-color:rgba(201,139,122,.55); }
+.certificate-placeholder:after { border-color:rgba(74,52,40,.32); }
+.certificate-inner > div:last-child > p { max-width:320px; color:var(--sand); font-size:.8rem; }
+.course-results { max-width:950px; text-align:center; }
+.course-results blockquote { color:var(--dark); font-size:clamp(2.1rem,4vw,4rem); }
+.investment-inner { margin-top:0; }
+.investment-box { padding:35px; border:1px solid var(--line); background:rgba(247,239,233,.55); }
+.investment-box strong { display:block; margin:18px 0; color:var(--dark); font:500 3rem 'Playfair Display'; }
+.investment-box > p:not(.eyebrow) { max-width:280px; color:var(--mid); font-size:.82rem; }
+.faq-list { max-width:780px; margin:70px auto 0; border-top:1px solid var(--line); }
+.faq-list details { border-bottom:1px solid var(--line); }
+.faq-list summary { cursor:pointer; list-style:none; padding:21px 0; font:500 1.25rem 'Playfair Display'; }
+.faq-list summary::-webkit-details-marker { display:none; }
+.faq-list summary:after { content:'+'; float:right; color:var(--rose); font:1.4rem Manrope; }
+.faq-list details[open] summary:after { content:'−'; }
+.faq-list details p { max-width:600px; margin:0 0 22px; color:var(--mid); font-size:.84rem; }
+.course-cta { padding:130px 0; color:var(--nude); background:var(--dark); text-align:center; }
+.course-cta .eyebrow { color:var(--sand); }
+.course-cta h2 { margin:26px auto; }
+.course-cta > div > p:not(.eyebrow) { max-width:360px; margin:25px auto 35px; color:var(--sand); }
 .hero { display:block; min-height:690px; position:relative; background-color:var(--dark); background-image:linear-gradient(90deg,rgba(43,29,26,.82) 0%,rgba(43,29,26,.54) 48%,rgba(43,29,26,.18) 100%),url('../assets/images/hero/trabalho-hero.jpg'); background-position:center; background-size:cover; }
 .hero:before { content:''; position:absolute; inset:0; background:rgba(43,29,26,.12); pointer-events:none; }
 .hero-text { position:relative; min-height:690px; display:flex; flex-direction:column; justify-content:center; padding-top:32px; z-index:4; }

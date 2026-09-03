@@ -16,25 +16,32 @@ if (menuToggle && mainNav) {
 	}));
 }
 
-const revealObserver = new IntersectionObserver((entries, observer) => {
-	entries.forEach((entry) => {
-		if (entry.isIntersecting) {
-			entry.target.classList.add('is-visible');
-			observer.unobserve(entry.target);
-		}
-	});
-}, { threshold: 0.12 });
+const revealElements = [...document.querySelectorAll('.reveal')];
+const pageSections = [...document.querySelectorAll('main > section')];
 
-document.querySelectorAll('.reveal').forEach((element, index) => {
+revealElements.forEach((element, index) => {
 	element.style.setProperty('--reveal-delay', `${Math.min(index * 45, 180)}ms`);
-	revealObserver.observe(element);
 });
 
-document.querySelectorAll('main > section').forEach((section, index) => {
+pageSections.forEach((section, index) => {
 	section.classList.add('section-reveal');
 	section.style.setProperty('--section-delay', `${Math.min(index * 35, 140)}ms`);
-	revealObserver.observe(section);
 });
+
+if ('IntersectionObserver' in window) {
+	const revealObserver = new IntersectionObserver((entries, observer) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('is-visible');
+				observer.unobserve(entry.target);
+			}
+		});
+	}, { threshold: 0.12 });
+
+	[...revealElements, ...pageSections].forEach((element) => revealObserver.observe(element));
+} else {
+	[...revealElements, ...pageSections].forEach((element) => element.classList.add('is-visible'));
+}
 
 const serviceTrack = document.querySelector('.service-track');
 const serviceImageData = [

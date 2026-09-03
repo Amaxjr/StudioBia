@@ -64,6 +64,25 @@
 .service-slide p { margin:0; font-size:.72rem; }
 .service-carousel .carousel-controls { display:none !important; }
 @media (max-width:520px) { .service-track { grid-template-columns:1fr; } }
+.course-hero-inner,.course-intro,.method-inner,.materials-grid,.investment-inner,.certificate-inner { display:block; }
+.course-hero,.course-hero-inner { min-height:0; }
+.course-hero-inner { padding-top:85px; padding-bottom:75px; }
+.course-hero h1 { font-size:clamp(3.5rem,15vw,5rem); }
+.course-image-placeholder { min-height:330px; margin-top:55px; }
+.course-image-placeholder span { font-size:2rem; }
+.course-intro > div:not(.section-kicker) { margin-top:50px; }
+.course-copy { max-width:360px; margin-top:32px; }
+.audience-grid,.program-grid { grid-template-columns:1fr; gap:30px; margin-top:50px; }
+.method-inner > div + div { margin-top:55px; }
+.course-image-small { min-height:300px; }
+.materials-grid,.investment-inner,.certificate-inner { margin-top:48px; }
+.materials-grid > div + ul { margin-top:40px; }
+.certificate-inner > div + div { margin-top:45px; }
+.investment-box { margin-top:42px; padding:25px; }
+.faq-list { margin-top:50px; }
+.faq-list summary { font-size:1.1rem; }
+.course-cta { padding:95px 0; }
+.course-cta h2 { font-size:clamp(3rem,12vw,4.6rem); }
 .service-carousel { max-width:780px !important; }
 .service-slide .service-visual { width:100%; max-width:320px; margin-left:auto; margin-right:auto; }
 @media (max-width:520px) { .service-carousel { max-width:100% !important; } .service-slide .service-visual { max-width:250px; } }
