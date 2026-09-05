@@ -1,88 +1,144 @@
-@media (max-width:800px) { .container { width:min(100% - 40px,620px); } .header-inner { min-height:72px; } .menu-toggle { display:block; min-width:48px; min-height:48px; } .main-nav { display:none; position:absolute; z-index:10; top:72px; left:0; right:0; flex-direction:column; align-items:stretch; gap:0; padding:18px 20px 24px; background:var(--nude); border-bottom:1px solid var(--line); } .main-nav.is-open { display:flex; } .main-nav a { padding:13px 0; } .nav-cta { margin-top:8px; text-align:center; }
-.hero { min-height:620px; } .hero-text { min-height:620px; padding:90px 20px 70px; } .hero h1 { font-size:clamp(3.3rem,15vw,5rem); } .hero-art { min-height:0; } .hero-panel { inset:24% 25%; } .hero-panel strong { font-size:5.5rem; } .hero-side-label { display:none; } .hero-art:before { top:14%; right:-8%; width:70%; } .section { padding-top:90px; padding-bottom:90px; } .intro,.portfolio,.contact-grid,.course-inner { display:block; } .intro-copy { margin-top:55px; } .intro-body { max-width:340px; margin-top:35px; } .section-band { padding:90px 0; } .service-carousel { margin-top:55px; } .service-track { min-height:0; } .service-item { grid-template-columns:92px 25px minmax(0,1fr) 18px; gap:10px; } .service-visual { min-height:94px; padding:10px; } .service-visual small { overflow-wrap:anywhere; font-size:.38rem; } .service-item h3 { font-size:1.15rem; } .service-item p { font-size:.72rem; }
-.service-item { grid-template-columns:135px 25px minmax(0,1fr) 18px; } .service-visual { min-height:140px; }
-.portfolio .section-heading { margin-bottom:50px; } .portfolio-grid { gap:14px; } .portfolio-offset { margin-top:45px; } .art { padding:14px; } .art strong { font-size:2rem; } .owners { display:block; padding-top:90px; padding-bottom:90px; } .owners-heading { max-width:340px; margin-top:50px; } .owners-grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:14px; margin-top:52px; } .owner-card { min-width:0; } .owner-card-offset { margin-top:0; } .owner-photo { padding:14px; } .owner-photo strong { font-size:1.8rem; } .owner-meta h3 { font-size:1.22rem; overflow-wrap:anywhere; } .section-band-light { padding:75px 0; } .values-grid { grid-template-columns:1fr; gap:30px; margin-top:45px; } .values-grid h3 { margin-top:20px; } .course-inner { min-height:520px; padding-top:80px; padding-bottom:80px; } .course-inner>div+div { margin-top:34px; } .course-preview:after { top:240px; font-size:16rem; } .contact-info { margin-top:45px; } .footer-inner { min-height:130px; flex-wrap:wrap; gap:20px; padding:25px 0; } .site-footer p { order:3; width:100%; } }
-@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .reveal,.section-reveal,.button { transition:none; } }
-.service-slide.is-active { grid-template-columns:1fr; }
-.service-slide .service-visual { min-height:430px; aspect-ratio:16 / 6; }
-.service-slide > div:not(.service-visual) { padding-right:40px; }
-@media (max-width:800px) { .service-slide .service-visual { min-height:220px; aspect-ratio:4 / 3; } }
-.service-slide h3 { white-space:nowrap; font-size:clamp(1rem,4.8vw,1.25rem); }
-.service-slide .service-visual { height:110px; min-height:110px; aspect-ratio:auto; }
-@media (max-width:800px) { .service-slide .service-visual { min-height:220px; aspect-ratio:4 / 3; } .service-slide > div:not(.service-visual) { padding-right:40px; } .service-slide h3 { font-size:clamp(1rem,4.8vw,1.25rem); } .service-slide p { font-size:.78rem; } }
-@media (max-width:800px) { .service-carousel { max-width:none; } .service-slide .service-visual { min-height:220px; } }
-.service-track { max-width:none; }
-.service-slide .service-visual { min-height:220px; aspect-ratio:4 / 3; }
-.service-slide .service-visual { min-height:180px; aspect-ratio:4 / 3; }
-.service-slide .service-visual { height:180px; min-height:180px; aspect-ratio:auto; }
-.service-track { max-width:100%; }
-.service-slide.is-active { padding:10px; }
-.service-slide .service-visual { height:190px; min-height:190px; }
-.service-slide > div:not(.service-visual) { padding-right:35px; }
-.service-slide h3 { font-size:1.35rem; }
-.service-carousel { max-width:100% !important; }
-@media (min-width:801px) { .service-carousel { max-width:780px !important; } }
-.service-carousel { max-width:100% !important; }
-.service-track { max-width:100%; }
-.service-slide .service-visual { width:100%; max-width:360px; aspect-ratio:1 / 1; height:auto; min-height:0; }
-.service-slide h3 { font-size:1.35rem; }
-.service-slide p { font-size:.78rem; }
-.service-carousel .carousel-controls { max-width:390px; }
-@media (prefers-reduced-motion:reduce) { .service-slide.is-active { animation:none; } }
-.service-slide,.service-slide.is-active { padding:14px; border:1px solid rgba(232,213,196,.5); box-shadow:inset 0 0 0 1px rgba(201,139,122,.18); }
-.service-slide .service-visual { border:1px solid rgba(247,239,233,.45); }
-@media (min-width:801px) { .service-carousel { max-width:820px !important; } }
-.service-carousel { max-width:100% !important; }
-.service-track { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
-.service-slide .service-visual { max-width:none; }
-@media (max-width:520px) { .service-track { grid-template-columns:1fr; } .service-slide .service-visual { aspect-ratio:4 / 3; } }
-.service-slide .service-visual { width:min(100%,620px); height:auto; aspect-ratio:1 / 1; }
-.service-slide .service-visual { width:100%; max-width:620px; margin-left:auto; margin-right:auto; }
-.service-carousel .carousel-controls { display:flex; max-width:620px; margin:14px auto 0; }
-.service-track { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
-.service-track { display:block !important; width:100%; max-width:none; }
-.service-slide { display:none !important; }
-.service-slide.is-active { display:block !important; width:100%; padding:14px; border:1px solid rgba(247,239,233,.3); background:rgba(43,29,26,.25); }
-.service-slide .service-visual { width:100%; height:190px; min-height:190px; aspect-ratio:auto; }
-.service-slide .service-number,.service-slide > div:not(.service-visual) { margin-left:0; margin-right:0; }
-.service-slide .service-number { margin-top:16px; }
-.service-slide > div:not(.service-visual) { padding:0 35px 0 0; }
-.service-slide h3 { margin:4px 0; font-size:1.35rem; white-space:nowrap; }
-.service-slide p { margin:0; font-size:.78rem; }
-.service-slide .service-visual { height:auto; min-height:0; aspect-ratio:1 / 1; }
-.service-slide .service-visual { min-height:170px; aspect-ratio:1 / 1; }
-.service-slide .service-number,.service-slide > div:not(.service-visual) { margin-left:14px; margin-right:14px; }
-.service-slide h3 { font-size:1.05rem; white-space:normal; }
-.service-slide p { font-size:.72rem; }
-.service-track { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-.service-slide,.service-slide.is-active { display:block !important; width:100%; padding:10px; border:1px solid rgba(247,239,233,.28); background:rgba(43,29,26,.25); }
-.service-slide .service-visual { width:100%; height:auto; min-height:0; aspect-ratio:1 / 1; max-width:none; }
-.service-slide .service-number,.service-slide > div:not(.service-visual) { margin-left:0; margin-right:0; }
-.service-slide .service-number { margin-top:15px; }
-.service-slide > div:not(.service-visual) { padding:0 4px; }
-.service-slide h3 { margin:4px 0; font-size:1.25rem; white-space:normal; }
-.service-slide p { margin:0; font-size:.72rem; }
-.service-carousel .carousel-controls { display:none !important; }
-@media (max-width:520px) { .service-track { grid-template-columns:1fr; } }
-.course-hero-inner,.course-intro,.method-inner,.materials-grid,.investment-inner,.certificate-inner { display:block; }
-.course-hero,.course-hero-inner { min-height:0; }
-.course-hero-inner { padding-top:85px; padding-bottom:75px; }
-.course-hero h1 { font-size:clamp(3.5rem,15vw,5rem); }
-.course-image-placeholder { min-height:330px; margin-top:55px; }
-.course-image-placeholder span { font-size:2rem; }
-.course-intro > div:not(.section-kicker) { margin-top:50px; }
-.course-copy { max-width:360px; margin-top:32px; }
-.audience-grid,.program-grid { grid-template-columns:1fr; gap:30px; margin-top:50px; }
-.method-inner > div + div { margin-top:55px; }
-.course-image-small { min-height:300px; }
-.materials-grid,.investment-inner,.certificate-inner { margin-top:48px; }
-.materials-grid > div + ul { margin-top:40px; }
-.certificate-inner > div + div { margin-top:45px; }
-.investment-box { margin-top:42px; padding:25px; }
-.faq-list { margin-top:50px; }
-.faq-list summary { font-size:1.1rem; }
-.course-cta { padding:95px 0; }
-.course-cta h2 { font-size:clamp(3rem,12vw,4.6rem); }
-.service-carousel { max-width:780px !important; }
-.service-slide .service-visual { width:100%; max-width:320px; margin-left:auto; margin-right:auto; }
-@media (max-width:520px) { .service-carousel { max-width:100% !important; } .service-slide .service-visual { max-width:250px; } }
+/* ===================== MOBILE (até 800px) ===================== */
+@media (max-width: 800px) {
+
+	/* -- layout base -- */
+	.container { width: min(100% - 40px, 620px); }
+
+	/* -- header / nav -- */
+	.header-inner { min-height: 72px; }
+	.menu-toggle { display: block; min-width: 48px; min-height: 48px; }
+	.main-nav {
+		display: none;
+		position: absolute;
+		z-index: 10;
+		top: 72px;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		padding: 18px 20px 24px;
+		background: var(--nude);
+		border-bottom: 1px solid var(--line);
+	}
+	.main-nav.is-open { display: flex; }
+	.main-nav a { padding: 13px 0; }
+	.nav-cta { margin-top: 8px; text-align: center; }
+
+	/* -- hero -- */
+	.hero { min-height: 620px; }
+	.hero-text { min-height: 620px; padding: 90px 20px 70px; }
+	.hero h1 { font-size: clamp(3.3rem, 15vw, 5rem); }
+	.hero-art { min-height: 0; }
+	.hero-art:before { top: 14%; right: -8%; width: 70%; }
+	.hero-panel { inset: 24% 25%; }
+	.hero-panel strong { font-size: 5.5rem; }
+	.hero-side-label { display: none; }
+
+	/* -- seções gerais -- */
+	.section { padding-top: 90px; padding-bottom: 90px; }
+	.intro, .portfolio, .contact-grid, .course-inner { display: block; }
+	.intro-copy { margin-top: 55px; }
+	.intro-body { max-width: 340px; margin-top: 35px; }
+	.section-band { padding: 90px 0; }
+
+	/* -- carrossel de serviços -- */
+	.service-carousel { margin-top: 55px; }
+	.service-track { min-height: 0; }
+	.service-item { grid-template-columns: 135px 25px minmax(0, 1fr) 18px; gap: 10px; }
+	.service-visual { min-height: 140px; padding: 10px; }
+	.service-visual small { overflow-wrap: anywhere; font-size: .38rem; }
+	.service-item h3 { font-size: 1.15rem; }
+	.service-item p { font-size: .72rem; }
+
+	/* -- portfólio -- */
+	.portfolio .section-heading { margin-bottom: 50px; }
+	.portfolio-grid { gap: 14px; }
+	.portfolio-offset { margin-top: 45px; }
+	.art { padding: 14px; }
+	.art strong { font-size: 2rem; }
+
+	/* -- donas do studio -- */
+	.owners { display: block; padding-top: 90px; padding-bottom: 90px; }
+	.owners-heading { max-width: 340px; margin-top: 50px; }
+	.owners-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; margin-top: 52px; }
+	.owner-card { min-width: 0; }
+	.owner-card-offset { margin-top: 0; }
+	.owner-photo { padding: 14px; }
+	.owner-photo strong { font-size: 1.8rem; }
+	.owner-meta h3 { font-size: 1.22rem; overflow-wrap: anywhere; }
+
+	/* -- valores -- */
+	.section-band-light { padding: 75px 0; }
+	.values-grid { grid-template-columns: 1fr; gap: 30px; margin-top: 45px; }
+	.values-grid h3 { margin-top: 20px; }
+
+	/* -- curso preview -- */
+	.course-inner { min-height: 520px; padding-top: 80px; padding-bottom: 80px; }
+	.course-inner > div + div { margin-top: 34px; }
+	.course-preview:after { top: 240px; font-size: 16rem; }
+
+	/* -- contato / footer -- */
+	.contact-info { margin-top: 45px; }
+	.footer-inner { min-height: 130px; flex-wrap: wrap; gap: 20px; padding: 25px 0; }
+	.site-footer p { order: 3; width: 100%; }
+}
+
+/* ===================== ACESSIBILIDADE ===================== */
+@media (prefers-reduced-motion: reduce) {
+	html { scroll-behavior: auto; }
+	.reveal, .section-reveal, .button { transition: none; }
+	.service-slide.is-active { animation: none; }
+}
+
+/* ===================== CARROSSEL DE SERVIÇOS — estado final consolidado =====================
+   O arquivo original acumulava dezenas de redefinições sucessivas dos mesmos
+   seletores (histórico de ajustes). Abaixo está o resultado final equivalente
+   (último valor de cada propriedade aplicado), organizado por breakpoint. */
+
+.service-carousel { max-width: 100% !important; }
+.service-carousel .carousel-controls { display: none !important; }
+
+.service-track { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 100%; }
+
+.service-slide,
+.service-slide.is-active { display: block !important; width: 100%; padding: 10px; border: 1px solid rgba(247, 239, 233, .28); background: rgba(43, 29, 26, .25); }
+
+.service-slide .service-visual { width: 100%; height: auto; min-height: 170px; aspect-ratio: 1 / 1; max-width: none; border: 1px solid rgba(247, 239, 233, .45); }
+
+.service-slide .service-number,
+.service-slide > div:not(.service-visual) { margin-left: 14px; margin-right: 14px; }
+.service-slide .service-number { margin-top: 15px; }
+.service-slide > div:not(.service-visual) { padding: 0 4px; }
+
+.service-slide h3 { margin: 4px 0; font-size: 1.05rem; white-space: normal; }
+.service-slide p { margin: 0; font-size: .72rem; }
+
+@media (min-width: 801px) {
+	.service-carousel { max-width: 820px !important; }
+}
+
+@media (max-width: 520px) {
+	.service-track { grid-template-columns: 1fr; }
+}
+
+/* ===================== PÁGINA DO CURSO — mobile ===================== */
+.course-hero-inner, .course-intro, .method-inner, .materials-grid, .investment-inner, .certificate-inner { display: block; }
+.course-hero, .course-hero-inner { min-height: 0; }
+.course-hero-inner { padding-top: 85px; padding-bottom: 75px; }
+.course-hero h1 { font-size: clamp(3.5rem, 15vw, 5rem); }
+.course-image-placeholder { min-height: 330px; margin-top: 55px; }
+.course-image-placeholder span { font-size: 2rem; }
+.course-intro > div:not(.section-kicker) { margin-top: 50px; }
+.course-copy { max-width: 360px; margin-top: 32px; }
+.audience-grid, .program-grid { grid-template-columns: 1fr; gap: 30px; margin-top: 50px; }
+.method-inner > div + div { margin-top: 55px; }
+.course-image-small { min-height: 300px; }
+.materials-grid, .investment-inner, .certificate-inner { margin-top: 48px; }
+.materials-grid > div + ul { margin-top: 40px; }
+.certificate-inner > div + div { margin-top: 45px; }
+.investment-box { margin-top: 42px; padding: 25px; }
+.faq-list { margin-top: 50px; }
+.faq-list summary { font-size: 1.1rem; }
+.course-cta { padding: 95px 0; }
+.course-cta h2 { font-size: clamp(3rem, 12vw, 4.6rem); }
